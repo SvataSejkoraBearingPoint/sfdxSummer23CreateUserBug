@@ -1,0 +1,11 @@
+{
+    "name": "test",
+    "main": ".github/actions/parseJSON/index.js",
+    "version": "0.1.0",
+    "license": "MIT",
+    "private": true,
+    "description": "Test",
+    "engines": {
+        "node": ">= 12.22.6"
+    }
+}

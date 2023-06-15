@@ -1,0 +1,49 @@
+{
+    "orgName": "Test",
+    "edition": "Enterprise",
+    "adminEmail": "svatopluk.sejkora@bearingpoint.com",
+    "country": "GB",
+    "language": "en_US",
+    "features": [
+        "ContactsToMultipleAccounts",
+        "ForceComPlatform",
+        "LightningSalesConsole",
+        "LightningServiceConsole",
+        "MarketingUser",
+        "SalesUser",
+        "ServiceCloud",
+        "ServiceUser",
+        "StateAndCountryPicklist"
+    ],
+    "settings": {
+        "accountSettings": {
+            "enableAccountTeams": true
+        },
+        "apexSettings": {
+            "enableDisableParallelApexTesting": true
+        },
+        "communitiesSettings": {
+            "enableNetworksEnabled": true
+        },
+        "chatterSettings": {
+            "enableChatter": true
+        },
+        "languageSettings": {
+            "enableTranslationWorkbench": true
+        },
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
+        },
+        "userManagementSettings": {
+            "enableEnhancedPermsetMgmt": true,
+            "enableEnhancedProfileMgmt": true,
+            "enableNewProfileUI": true
+        },
+        "surveySettings": {
+            "enableSurvey": true
+        },
+        "enhancedNotesSettings": {
+            "enableEnhancedNotes": true
+        }
+    }
+}

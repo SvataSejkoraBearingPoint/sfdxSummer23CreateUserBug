@@ -1,0 +1,11 @@
+{
+    "FirstName": "Test",
+    "LastName": "SalesUser",
+    "TimeZoneSidKey": "Europe/Berlin",
+    "LocaleSidKey": "en_US",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "en_US",
+    "profileName": "Standard User",
+    "generatePassword": true,
+    "Alias": "tester1"
+}
