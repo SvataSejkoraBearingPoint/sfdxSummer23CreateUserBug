@@ -26,13 +26,6 @@ jobs:
                     npm install sfdx-cli@7.204.6 --global
                     npm install @salesforce/cli --global
 
-            # Install sfdx plugin
-            -   name: 'Install plugin'
-                shell: bash
-                run: |
-                    printf 'y\n' | sfdx plugins:install ci-sfdx-plugin@latest
-                    printf 'y\n' | sfdx plugins:install sfdmu@latest
-
             # Obtain JWT certificate for DEVHUB
             -   name: 'Obtain JWT certificate from secrets'
                 env:
@@ -46,7 +39,7 @@ jobs:
                     SFDX_PATH: 'https://login.salesforce.com'
                     SF_USERNAME: 'devhub2@sejkorasvata.com'
                 shell: bash
-                run: sf org login jwt --client-id ${{ secrets.DEV_HUB_CLIENT_ID_KEY}} --jwt-key-file ${HOME}/server.key --instance-url $SFDX_PATH --username $SF_USERNAME --set-default-dev-hub --alias DevHub
+                run: sfdx org login jwt --client-id ${{ secrets.DEV_HUB_CLIENT_ID_KEY}} --jwt-key-file ${HOME}/server.key --instance-url $SFDX_PATH --username $SF_USERNAME --set-default-dev-hub --alias DevHub
 
             # Checkout the source code
             -   name: Checkout source code
